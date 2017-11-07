@@ -1,6 +1,18 @@
+
 numbers = [1, 2, 3]
 
 def square_array(numbers)
- numbers.collect {|numbers| x**2}
+new_array = []
+numbers.each do |num| 
+    new_array << num ** 2
+  end
+  new_array
+end
 
-#arr.collect {|x| x*2}
+
+#class Array
+#  def square!
+#    self.map {|num| num ** 2}
+#    self
+#  end
+#end
